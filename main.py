@@ -12,6 +12,9 @@ html, body, [class*="css"] {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+.title{
+margin-top:-100px;
+}
 </style>""",
 unsafe_allow_html=True)
 
@@ -22,6 +25,7 @@ hide_streamlit_style = """
             header {visibility: hidden;}
             </style>
             """
+
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 st.header('Assignment Problem')
@@ -72,8 +76,6 @@ for i in range(rows):
     l1.append(l)   
     l=[]
 
-print(l1)
-
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: center;} </style>', unsafe_allow_html=True)
 st.markdown("""---""")  
 maxmin = st.radio(
@@ -108,10 +110,19 @@ if submit:
         st.write("Allocations")
         for i in ans:
             al.append(i[0])
+        st.table(al)
+        col=ans[2][0][0]
+        row=ans[2][0][1]
+        tc=0
+        for i in range(len(ans)):
+            col=ans[i][0][0]
+            row=ans[i][0][1]
+            tc=tc+l1[col-1][row-1]+1
+        st.write("Total Cost:",tc)
+
+
     except:
         pass
     
-
-    st.table(al)
 
 
