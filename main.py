@@ -117,7 +117,7 @@ if submit:
         for i in range(len(ans)):
             col=ans[i][0][0]
             row=ans[i][0][1]
-            tc=tc+l1[col-1][row-1]+1
+            tc=tc+l1[col-1][row-1]
         st.write("Total Cost:",tc)
 
 
