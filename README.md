@@ -49,9 +49,3 @@ streamlit run main.py
 4. Choose whether to maximize or minimize the total cost.
 5. Click the "Submit" button to view the optimal assignment and the total cost.
 
-## Contributors
-
-- [Athishsivakumaran](https://github.com/Athishsivakumaran)
-- [mhmd-bilal](https://github.com/mhmd-bilal)
-
-Feel free to contribute to the project by creating issues or submitting pull requests.
