@@ -1,4 +1,4 @@
-# Assignment Problem Solver [Clcik here](https://assignment-problem-solver.streamlit.app/)
+# Assignment Problem Solver ###[Click here](https://assignment-problem-solver.streamlit.app/)
 ## Overview
 
 This project is a web-based application that solves the Assignment Problem using the Hungarian Algorithm. The user can input the cost matrix, specify whether to maximize or minimize the total cost, and the application will provide the optimal assignment along with the total cost.
